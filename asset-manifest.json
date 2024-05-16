@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amstronglandeza21/refer.git/static/css/main.9669510b.css",
+    "main.js": "/amstronglandeza21/refer.git/static/js/main.36d3eddc.js",
+    "static/js/453.033f6190.chunk.js": "/amstronglandeza21/refer.git/static/js/453.033f6190.chunk.js",
+    "index.html": "/amstronglandeza21/refer.git/index.html",
+    "main.9669510b.css.map": "/amstronglandeza21/refer.git/static/css/main.9669510b.css.map",
+    "main.36d3eddc.js.map": "/amstronglandeza21/refer.git/static/js/main.36d3eddc.js.map",
+    "453.033f6190.chunk.js.map": "/amstronglandeza21/refer.git/static/js/453.033f6190.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9669510b.css",
+    "static/js/main.36d3eddc.js"
+  ]
+}
