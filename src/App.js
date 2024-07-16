@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import React, { useState } from 'react';
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+<<<<<<< HEAD
 import './App.css';
+=======
+import './App.css'; 
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
 
 const App = () => {
   const [referrerID, setReferrerID] = useState('');
@@ -13,6 +21,7 @@ const App = () => {
   const [contact, setContact] = useState('');
   const [relationship, setRelationship] = useState('');
   const [course, setCourse] = useState('');
+<<<<<<< HEAD
   const [courses, setCourses] = useState([]);
   const [strands, setStrands] = useState([]);
   const [tesdaCourses, setTesdaCourses] = useState([]);
@@ -108,6 +117,11 @@ const App = () => {
     fetchRelationships();
   }, []);
 
+=======
+  const [modalMessage, setModalMessage] = useState('');
+  const [modalShow, setModalShow] = useState(false);
+
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
   const handleSubmit = async () => {
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycby-wPsbelJ6wjm6mJwsjL7hltt6C_pCOPW5yobt02tEIE3ZdFPxNQcPsJKNrMZICeOF/exec', {
@@ -146,15 +160,20 @@ const App = () => {
       setModalShow(true);
     }
   };
+<<<<<<< HEAD
 
   const handleStudentLevelChange = (e) => {
     setStudentLevel(e.target.value);
     setCourse(''); 
   };
+=======
+  
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
 
   return (
     <div className="refer-page-container">
       <div className="row justify-content-center">
+<<<<<<< HEAD
         <div className="col-md-12 refer-form">
           <h1 className="text-center mb-4">Refer Now</h1>
           <Form>
@@ -180,18 +199,52 @@ const App = () => {
                 </Form.Group>
               </div>
               <div className="col-md-12">
+=======
+        <div className="col-md-6 refer-form">
+          <h1 className="text-center mb-4">Refer Now</h1>
+          <Form>
+            <div className="row">
+              <div className="col-md-6">
+                <Form.Group controlId="referrerID">
+                  <Form.Label>Referreral Code:</Form.Label>
+                  <Form.Control type="text" value={referrerID} onChange={(e) => setReferrerID(e.target.value)} />
+                </Form.Group>
+                <div className="row">
+                  <div className="col-md-6">
+                    <Form.Group controlId="referredFirstName">
+                      <Form.Label>First Name:</Form.Label>
+                      <Form.Control type="text" value={referredFirstName} onChange={(e) => setReferredFirstName(e.target.value)} />
+                    </Form.Group>
+                  </div>
+                  <div className="col-md-6">
+                    <Form.Group controlId="referredLastName">
+                      <Form.Label>Last Name:</Form.Label>
+                      <Form.Control type="text" value={referredLastName} onChange={(e) => setReferredLastName(e.target.value)} />
+                    </Form.Group>
+                  </div>
+                </div>
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
                 <Form.Group controlId="email">
                   <Form.Label>Email:</Form.Label>
                   <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </Form.Group>
+<<<<<<< HEAD
               </div>
             </div>
             <div className="row">
+=======
+                <Form.Group controlId="relationship">
+                  <Form.Label>Relationship:</Form.Label>
+                  <Form.Control type="text" value={relationship} onChange={(e) => setRelationship(e.target.value)} />
+                </Form.Group>
+              </div>
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
               <div className="col-md-6">
                 <Form.Group controlId="contact">
                   <Form.Label>Contact:</Form.Label>
                   <Form.Control type="text" value={contact} onChange={(e) => setContact(e.target.value)} />
                 </Form.Group>
+<<<<<<< HEAD
               </div>
               <div className="col-md-6">
                 <Form.Group controlId="relationship">
@@ -253,6 +306,14 @@ const App = () => {
                 )}
               </div>
             </div>
+=======
+                <Form.Group controlId="course">
+                  <Form.Label>Course:</Form.Label>
+                  <Form.Control type="text" value={course} onChange={(e) => setCourse(e.target.value)} />
+                </Form.Group>
+              </div>
+            </div>
+>>>>>>> f4a1c88b3c2ad3c1e0f5b8b0742b7b2b716cbfa2
             <Button variant="danger" onClick={handleSubmit} className="mt-3">Submit</Button>
           </Form>
         </div>
